@@ -128,7 +128,7 @@ func (ts *taskServer) dueHandler(w http.ResponseWriter, r *http.Request) {
 
 func main() {
 	certFile := flag.String("certfile", "cert.pem", "certificate PEM file")
-	keyfile := flag.String("keyfile", "cert.pem", "key PEM file")	
+	keyfile := flag.String("keyfile", "key.pem", "key PEM file")	
 	flag.Parse()
 
 	router := mux.NewRouter()
